@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu dien</title>
+</head>
+<body>
+<input type="text" id="keyword">
+<button type="button" onclick="trans()">Search</button>
+<p id = 'result'></p>
+
+<script>
+    function trans() {
+        let keyword = document.getElementById('keyword').value;
+        let en = [ 'hello','what' ];
+        let vi = ['xin chao','cai gi'];
+
+
+        for ( let i = 0; i < en.length;i++ ) {
+            if (keyword === en[i]) {
+                document.getElementById('result').innerHTML = vi[i];
+                break;
+            }
+
+        }
+
+    }
+
+
+</script>
+</body>
+</html>
