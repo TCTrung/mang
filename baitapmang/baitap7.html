@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Kiem tra phan tu co trong mang khong va xoa khoi mang</h3>
+Nhap mang :
+<input type="number" id="array"> <br>
+Nhap phan tu :
+<input type="number" id="number" >
+<button type="button" onclick="arrNum()"> Kiem tra</button>
+<p id="ketqua"></p>
+
+<script>
+    function arrNum() {
+        let array = document.getElementById("array").value;
+        let arr = array.split("");
+        let number = document.getElementById("number").value;
+        for (let i = 0; i < arr.length; i++) {
+            if (number === arr[i]) {
+                arr.splice(i,1);
+            }
+
+        }
+        document.getElementById("ketqua").innerHTML = arr;
+
+
+    }
+</script>
+</body>
+</html>

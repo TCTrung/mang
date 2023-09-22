@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+<input type="text" id="num">
+<button type="button" onclick="ex4()">Dao chieu</button>
+<p id="kq"></p>
+
+<script>
+    function ex4() {
+        let arrnew = document.getElementById("num").value;
+        let arr = arrnew.split("");
+        let first = 0;
+        let last = arr.length - 1;
+
+        while (first < last) {
+            let a = arr[first];
+            arr[first] = arr[last];
+            arr[last] = a;
+            first++;
+            last--;
+
+        }
+        document.getElementById("kq").innerHTML = arr;
+
+
+    }
+
+</script>
+</body>
+</html>

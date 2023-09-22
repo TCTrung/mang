@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT8</title>
+</head>
+<body>
+<h3>Sap xep thu tu giam dan</h3>
+Nhap mang :
+<input type="number" id="array"> <br>
+<button type="button" onclick="arrNum()"> Kiem tra</button>
+<p id="ketqua"></p>
+
+
+<script>
+    function arrNum() {
+        let array = document.getElementById("array").value;
+        let arr = array.split("");
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    let a = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = a;
+                }
+            }
+
+
+        }
+        document.getElementById("ketqua").innerHTML = arr;
+
+    }
+</script>
+</body>
+</html>
