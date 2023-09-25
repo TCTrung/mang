@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra so nguyen to</title>
+</head>
+<body>
+<script>
+
+function arr(a) {
+    if (a === 2) {
+        return a + ' So nguyen to';
+    } else if (a < 2) {
+        return a + ' Khong phai so nguyen to';
+    }
+
+        for (let i = 2; i < a ; i++) {
+            if (a%i === 0) {
+                return a + ' khong phai so nguyen to'
+            }
+        }
+        return a + ' so nguyen to'
+
+
+}
+    let a = +prompt('Nhap so :');
+    alert(arr(a));
+
+</script>
+</body>
+</html>
