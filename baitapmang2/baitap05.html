@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT5</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhap mang chuoi 1');
+    let b = prompt('Nhap mang chuoi 2');
+    let arr1 = a.split(' ');
+    let arr2 = b.split(' ');
+    let count = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i].length === arr2[i].length) {
+            count++;
+        }else {
+            document.write('Hai mang khong trung nhau'+ '<br>');
+            break;
+        }
+    }
+    if (count === arr1.length && count === arr2.length) {
+        document.write('Hai mang trung nhau'+ '<br>' );
+    }
+    document.write('Mang 1 : '+ arr1 + '<br>');
+    document.write('Mang 2 : '+ arr2);
+
+</script>
+</body>
+</html>
