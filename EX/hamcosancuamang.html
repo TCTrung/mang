@@ -40,11 +40,21 @@
     }
 
     function ex3() {
-        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let arr = prompt('Nhap ky tu can tim :');
         let LOWER = 'abcdefghijklmnopqrstuvwxyz';
-        let str = prompt('Nhap ky tu can tim :');
-        let arr = [];
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let arrNew = [];
 
+        for (let i = 0; i < arr.length; i++) {
+            if (LOWER.indexOf(arr[i]) !== -1) {
+                arrNew.push(arr[i].toUpperCase());
+            }else if (UPPER.indexOf(arr[i]) !== -1) {
+                arrNew.push(arr[i].toLowerCase());
+            }else {
+                arrNew.push(arr[i]);
+            }
+        }
+        document.write(arrNew.join(''));
 
     }
 
