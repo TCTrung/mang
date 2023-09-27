@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="ex1()" >Bai 1</button>
+<br>
+<input type="number" required="Nhap gia tri" id="num">
+<button type="button" onclick="ex2()" >Bai 2</button>
+<br>
+<button type="button" onclick="ex3()" >Bai 3</button>
+<br>
+<p id = 'result'></p>
+
+
+<script>
+    function ex1() {
+        myColor = ["Red", "Green", "White", "Black"];
+
+            document.getElementById('result').innerHTML = myColor
+
+
+    }
+
+    function ex2() {
+        let num = document.getElementById('num').value;
+        let number = num;
+        let arr = [number[0]]
+
+        for (let i = 1; i < number.length; i++) {
+            if (number[i - 1]%2 === 0 && number[i]%2 === 0) {
+                arr.push('-',number[i]);
+            }else {
+                arr.push(number[i])
+            }
+        }
+        document.getElementById('result').innerHTML = arr;
+    }
+
+    function ex3() {
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let str = prompt('Nhap ky tu can tim :');
+        let arr = [];
+
+
+    }
+
+
+</script>
+</body>
+</html>
