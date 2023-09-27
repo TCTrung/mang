@@ -6,15 +6,18 @@
 </head>
 <body>
 <script>
-    let arr = [2,15,7,899,11,110,23,33,34,13];
-    let max = arr[0];
+
+    let arr = [];
+    let max = null;
     let index = 0;
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < 10; i++) {
+        arr[i] = +prompt('Nhap gia tri :')
         if (arr[i] > max) {
             max = arr[i];
             index = i;
         }
     }
+    document.write('Mang :' + arr + '<br>');
     document.write('So lon nhat la ' + max + ' tai vi tri ' +index)
 
 </script>
