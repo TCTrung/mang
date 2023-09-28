@@ -10,10 +10,12 @@
     let arr = a.split(' ');
     let count = 0;
     for (let i = 0; i < arr.length; i++) {
-        count = arr[i].length;
-        document.write(arr[i] + ' co ' + count + ' tu ' + '<br>' );
-    }
-    document.write(arr);
+        if (arr[i]%1 === 0) {
+        }else {
+            count++;
+        }
+
+    }document.write(arr + ' co ' + count + ' tu ' );
 
 </script>
 </body>
